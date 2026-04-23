@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <!-- ✅ FIXED PATH -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <div class="card">
+    <h2>Dashboard</h2>
+    <p id="userInfo"></p>
+  </div>
+
+  <!-- ADD SCORE -->
+  <div class="card">
+    <h3>Add Score</h3>
+    <input id="score" placeholder="Score (1-45)">
+    <input id="date" type="date">
+    <button onclick="addScore()">Add Score</button>
+  </div>
+
+  <!-- VIEW SCORES -->
+  <div class="card">
+    <h3>Your Scores</h3>
+    <ul id="scoreList"></ul>
+  </div>
+
+  <!-- DRAW -->
+  <div class="card">
+    <h3>Monthly Draw</h3>
+    <button onclick="runDraw()">Run Draw</button>
+    <p id="drawResult"></p>
+  </div>
+
+  <!-- 🔥 NAVIGATION (IMPORTANT ADDITION) -->
+  <div class="card">
+    <button onclick="goToAdmin()">Admin Panel</button>
+    <button onclick="goToCharities()">Charities</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

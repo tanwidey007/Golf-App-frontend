@@ -1,0 +1,158 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* DASHBOARD */
+.dashboard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #1e293b;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
+
+/* DRAW RESULT */
+#drawResult, #adminDraw {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #22c55e;
+}
+
+/* ========================= */
+/* 📱 MEDIA QUERIES */
+/* ========================= */
+
+/* 🔹 Tablets */
+@media (max-width: 768px) {
+
+  .dashboard {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+
+  .container {
+    margin: 50px auto;
+    padding: 25px;
+  }
+
+  h1, h2, h3 {
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Mobile Phones */
+@media (max-width: 480px) {
+
+  .container {
+    width: 90%;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .dashboard {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  input, select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 13px;
+  }
+}
+
+/* 🔹 Extra Small Devices */
+@media (max-width: 350px) {
+
+  h1, h2 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 13px;
+  }
+}
